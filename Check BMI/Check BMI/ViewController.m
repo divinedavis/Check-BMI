@@ -24,6 +24,7 @@
     self.indexHeader.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:25];
     self.scrollingInfo.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:20];
     self.resultsLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:34];
+    self.BMILabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:34];
 }
 
 - (void)didReceiveMemoryWarning {

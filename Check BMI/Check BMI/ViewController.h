@@ -32,6 +32,9 @@
 //Your BMI calculations
 @property (nonatomic) float BMI;
 
+//BMI Label
+@property (weak, nonatomic) IBOutlet UILabel *BMILabel;
+
 //The 'Calculate' button action
 - (IBAction)calculateButton:(UIButton *)sender;
 

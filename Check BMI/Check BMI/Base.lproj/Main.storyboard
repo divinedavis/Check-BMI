@@ -78,6 +78,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="BMILabel" destination="IPy-rT-7M1" id="6WQ-Je-QMA"/>
                         <outlet property="enteredHeightInFeet" destination="hNk-9O-cek" id="Nvf-fz-2Pv"/>
                         <outlet property="enteredHeightInInches" destination="oby-3N-ZIc" id="2pA-fE-Ngm"/>
                         <outlet property="enteredWeight" destination="8XT-qA-4Hn" id="70h-Tz-Mv7"/>
