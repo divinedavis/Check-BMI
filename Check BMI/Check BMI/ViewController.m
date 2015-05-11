@@ -15,13 +15,95 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    //Ends the editing when you touch a part of the view that isnt a field
+    [self.view endEditing:YES];
+    
+    //Changed the background color to an image I uploaded
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]]];
+    
+    //Manually changed the indexHeader, scrollingInfo, & resultsLabel font to match the design
+    self.indexHeader.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:25];
+    self.scrollingInfo.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:20];
+    self.resultsLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:34];
 }
 
 - (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    //Nothing yet
+}
+
+- (IBAction)calculateButton:(UIButton *)sender {
+    //Takes in the weight value
+    float weight = [self.enteredWeight.text intValue];
+    
+    //Takes in the height value in feet
+    float heightInFeet = [self.enteredHeightInFeet.text intValue];
+    
+    //Takes in the height value in inches
+    float heightInInches = [self.enteredHeightInInches.text intValue];
+    
+    //New variable
+    float height;
+    
+    //New variable
+    float feetInInches;
+    
+    //Converting the feet input to inches
+    feetInInches = heightInFeet * 12;
+    
+    //Sets the converted height to 'height'
+    height = feetInInches + heightInInches;
+    
+    //Sets the calculations to the 'BMI'
+    float BMI = ((weight * 703)/(height * height));
+    
+    //Setting the 'resultsLabel' to a string, but I simply put a float placeholder and passed the 'BMI'
+    self.resultsLabel.text = [NSString stringWithFormat:@"%.1f",BMI];
+    
+    //After you hit the button, the keyboard goes away
+    [self.view endEditing:YES];
+    
+    //If your BMI is too high, you'll be given this text information
+    if (BMI > 30) {
+        self.scrollingInfo.text = @"You're obese. Please consult a doctor. There are a number of reasons for this. Eating in smaller portions will help, along with exercising.";
+        self.indexHeader.text = @"Very High BMI";
+        
+        //When you touch the 'calculate' button, it reveals the 'workouts' button
+        //self.workoutButton.hidden = NO;
+        }
+    //If your BMI is between these numbers, you'll be prompted with this text
+    else if (BMI >= 25 && BMI <= 29.9) {
+        self.scrollingInfo.text = @"Your BMI is too high. Try exercising more. This number does not calculate your muscle mass to fat ratio.";
+        self.indexHeader.text = @"High BMI";
+        
+        //When you touch the 'calculate' button, it reveals the 'workouts' button
+        //self.workoutButton.hidden = NO;
+    }
+    
+    //If your BMI is between these numbers, you'll be prompted with this text
+    else if (BMI >= 18.5 && BMI <= 24.9) {
+        self.scrollingInfo.text = @"Your BMI is perfect. Continue to eat and excersice regularly. You're doing a great job, keep it up.";
+        self.indexHeader.text = @"Perfect BMI";
+    }
+    
+    //I'm using scrollingInfo for the information you see when you BMI is calculated & the indexHeader for the label that tells you if you have a low or high BMI
+    else if (BMI >= 15.4 && BMI <= 18.4){
+        self.scrollingInfo.text = @"You're skinny. In order for you to increase your BMI, try eating 3 healthy meals a day.";
+        self.indexHeader.text = @"Low BMI";
+    }
+    
+    //If you don't put in a value or nil
+    else if (BMI == 0) {
+        self.scrollingInfo.text = @"Put in a value";
+        self.indexHeader.text = @"";
+    }
+    
+    //Using an else statement to output text to the scrollingInfo text view
+    else {
+        self.scrollingInfo.text = @"You're underweight. You could try eating in higher porportions.";
+        self.indexHeader.text = @"Very Low BMI";
+    }
+    
+    
 }
 
 @end
