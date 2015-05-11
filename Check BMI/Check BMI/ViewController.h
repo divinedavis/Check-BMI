@@ -35,9 +35,6 @@
 //The 'Calculate' button action
 - (IBAction)calculateButton:(UIButton *)sender;
 
-//When you touch the button it takes you to a new screen
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *workoutButton;
-
 
 @end
 

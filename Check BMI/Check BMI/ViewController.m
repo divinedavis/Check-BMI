@@ -18,8 +18,7 @@
     //Ends the editing when you touch a part of the view that isnt a field
     [self.view endEditing:YES];
     
-    //Changed the background color to an image I uploaded
-    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]]];
+   
     
     //Manually changed the indexHeader, scrollingInfo, & resultsLabel font to match the design
     self.indexHeader.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:25];
@@ -32,6 +31,8 @@
 }
 
 - (IBAction)calculateButton:(UIButton *)sender {
+    
+    
     //Takes in the weight value
     float weight = [self.enteredWeight.text intValue];
     
@@ -40,7 +41,7 @@
     
     //Takes in the height value in inches
     float heightInInches = [self.enteredHeightInInches.text intValue];
-    
+  
     //New variable
     float height;
     
@@ -61,6 +62,7 @@
     
     //After you hit the button, the keyboard goes away
     [self.view endEditing:YES];
+    
     
     //If your BMI is too high, you'll be given this text information
     if (BMI > 30) {
@@ -102,7 +104,7 @@
         self.scrollingInfo.text = @"You're underweight. You could try eating in higher porportions.";
         self.indexHeader.text = @"Very Low BMI";
     }
-    
+
     
 }
 
