@@ -1,4 +1,4 @@
-# Body-Mass-Index
+# Check BMI
 iOS app - A very easy way to input your weight and height to see what your BMI (body mass index) is. The very simple design allows you to use the text fields to input your weight and height. The height is converted to inches in the implementation file. When you are done with the specifications of your dimensions, you touch the 'Calculate' button and your BMI is displayed inside the view for the user. 
 
 ## App icon:
