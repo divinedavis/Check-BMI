@@ -18,7 +18,6 @@ iOS app - A very easy way to input your weight and height to see what your BMI (
 //
 //  Created by Divine Davis on 3/22/15.
 //  Copyright (c) 2015 Divine Davis. All rights reserved.
-//
 
 #import "ViewController.h"
 
@@ -82,7 +81,7 @@ iOS app - A very easy way to input your weight and height to see what your BMI (
     }
     //If your BMI is between these numbers, you'll be prompted with this text
     else if (BMI >= 25 && BMI <= 29.9) {
-        self.scrollingInfo.text = @"Your BMI is too high. Try exercising more. This number does not calculate your muscle mass to fat ratio.";
+        self.scrollingInfo.text = @"Your BMI is too high. Try exercising more. This number does not calculate your muscle mass         to fat ratio.";
         self.indexHeader.text = @"High BMI";
         
     //When you touch the 'calculate' button, it reveals the 'workouts' button
@@ -91,13 +90,13 @@ iOS app - A very easy way to input your weight and height to see what your BMI (
     
     //If your BMI is between these numbers, you'll be prompted with this text
         else if (BMI >= 18.5 && BMI <= 24.9) {
-            self.scrollingInfo.text = @"Your BMI is perfect. Continue to eat and excersice regularly. You're doing a great job, keep it up.";
+            self.scrollingInfo.text = @"Your BMI is perfect. Continue to eat and excersice regularly. You're doing a great job,             keep it up.";
             self.indexHeader.text = @"Perfect BMI";
         }
     
-    //I'm using scrollingInfo for the information you see when you BMI is calculated & the indexHeader for the label that tells you if you have a low or high BMI
+    //I'm using scrollingInfo for the information you see when you BMI is calculated & the indexHeader for the label that tells         you if you have a low or high BMI
         else if (BMI >= 15.4 && BMI <= 18.4){
-            self.scrollingInfo.text = @"You're skinny. In order for you to increase your BMI, try eating 3 healthy meals a day.";
+            self.scrollingInfo.text = @"You're skinny. In order for you to increase your BMI, try eating 3 healthy meals a                 day.";
             self.indexHeader.text = @"Low BMI";
         }
     
