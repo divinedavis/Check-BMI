@@ -416,6 +416,7 @@
 				161A041A1B0069F90046BBC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		161A041B1B0069F90046BBC9 /* Build configuration list for PBXNativeTarget "Check BMITests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +425,7 @@
 				161A041D1B0069F90046BBC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
