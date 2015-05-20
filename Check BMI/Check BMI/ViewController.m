@@ -114,8 +114,11 @@
         self.indexHeader.textColor = [UIColor redColor];
     }
     
+    //If the weight is over 400 lbs, then I think you should go to a doctor
     if (weight > 400) {
-        
+        self.scrollingInfo.text = @"You need to see a doctor";
+        self.indexHeader.text = @"Woah";
+        self.indexHeader.textColor = [UIColor redColor];
     }
     
     
