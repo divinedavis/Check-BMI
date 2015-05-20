@@ -106,6 +106,20 @@
         self.scrollingInfo.text = @"You're underweight. You could try eating in higher porportions.";
         self.indexHeader.text = @"Very Low BMI";
     }
+    
+    //If the height in feet is greater than 8 feet, you get an error message
+    if (heightInFeet > 8) {
+        self.scrollingInfo.text = @"I'm pretty sure you're not the tallest person who has ever lived! Stop lying! Now try this again & enter your correct height";
+        self.indexHeader.text = @"Error";
+        self.indexHeader.textColor = [UIColor redColor];
+    }
+    
+    if (weight > 400) {
+        
+    }
+    
+    
+    
 
     
 }
