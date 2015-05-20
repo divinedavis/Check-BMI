@@ -121,6 +121,13 @@
         self.indexHeader.textColor = [UIColor redColor];
     }
     
+    //If the height in inches is over 12, throw an error message
+    if (heightInInches > 12) {
+        self.scrollingInfo.text = @"You should use a number that is less than 13 to get the best results";
+        self.indexHeader.text = @"Error";
+        self.indexHeader.textColor = [UIColor redColor];
+    }
+    
     
     
 
