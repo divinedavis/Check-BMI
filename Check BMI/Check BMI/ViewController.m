@@ -35,6 +35,9 @@
 - (IBAction)calculateButton:(UIButton *)sender {
     
     
+    self.workoutsButton.hidden = NO;
+
+    
     //Takes in the weight value
     float weight = [self.enteredWeight.text intValue];
     
@@ -71,16 +74,13 @@
         self.scrollingInfo.text = @"You're obese. Please consult a doctor. There are a number of reasons for this. Eating in smaller portions will help, along with exercising.";
         self.indexHeader.text = @"Very High BMI";
         
-        //When you touch the 'calculate' button, it reveals the 'workouts' button
-        //self.workoutButton.hidden = NO;
+        
         }
     //If your BMI is between these numbers, you'll be prompted with this text
     else if (BMI >= 25 && BMI <= 29.9) {
         self.scrollingInfo.text = @"Your BMI is too high. Try exercising more. This number does not calculate your muscle mass to fat ratio.";
         self.indexHeader.text = @"High BMI";
         
-        //When you touch the 'calculate' button, it reveals the 'workouts' button
-        //self.workoutButton.hidden = NO;
     }
     
     //If your BMI is between these numbers, you'll be prompted with this text

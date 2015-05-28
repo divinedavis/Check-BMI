@@ -35,8 +35,12 @@
 //BMI Label
 @property (weak, nonatomic) IBOutlet UILabel *BMILabel;
 
+//The hidden workout button that appears when you touch the calculate button
+@property (weak, nonatomic) IBOutlet UIButton *workoutsButton;
+
 //The 'Calculate' button action
 - (IBAction)calculateButton:(UIButton *)sender;
+
 
 
 @end
