@@ -29,12 +29,11 @@
 }
 
 - (void)didReceiveMemoryWarning {
-    //Nothing yet
 }
 
 - (IBAction)calculateButton:(UIButton *)sender {
     
-    
+    //When you touch the button the workouts button reveals itself
     self.workoutsButton.hidden = NO;
 
     
