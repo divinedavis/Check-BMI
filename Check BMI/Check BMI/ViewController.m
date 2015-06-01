@@ -26,6 +26,7 @@
     self.resultsLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:34];
     self.BMILabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:34];
     self.resultsLabel.textColor = [UIColor redColor];
+    [self.metricConversionSwitch addTarget:self action:@selector(setOn:) forControlEvents:UIControlEventValueChanged];
     
 }
 
@@ -126,6 +127,7 @@
         self.scrollingInfo.text = @"You should use a number that is less than 13 to get the best results";
         self.indexHeader.text = @"Error";
         self.indexHeader.textColor = [UIColor redColor];
+     
     }
     
     
@@ -142,6 +144,7 @@
     self.enteredWeight.hidden = YES;
     self.enteredHeightInInches.hidden = YES;
     self.enteredHeightInFeet.hidden = YES;
+    
     
 }
 
