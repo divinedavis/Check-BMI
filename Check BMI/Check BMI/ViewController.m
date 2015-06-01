@@ -129,8 +129,19 @@
     
     
     
+    
+    
 
     
 }
+- (void)conversions {
+    
+    }
+- (void)setOn:(BOOL)on
+     animated:(BOOL)animated {
+    
+    
+}
+
 
 @end
