@@ -39,6 +39,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *workoutsButton;
 @property (weak, nonatomic) IBOutlet UISwitch *metricConversionSwitch;
 @property(nonatomic, getter=isOn) BOOL on;
+@property (weak, nonatomic) IBOutlet UITextField *heightInMeters;
+@property (weak, nonatomic) IBOutlet UITextField *weightInKilograms;
 
 
 //The 'Calculate' button action

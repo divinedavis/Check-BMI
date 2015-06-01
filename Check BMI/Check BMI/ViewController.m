@@ -26,6 +26,7 @@
     self.resultsLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:34];
     self.BMILabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:34];
     self.resultsLabel.textColor = [UIColor redColor];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -131,15 +132,16 @@
     
     
     
+    
 
     
 }
-- (void)conversions {
-    
-    }
-- (void)setOn:(BOOL)on
+
+- (void)setOn:(BOOL)metricConversionSwitch
      animated:(BOOL)animated {
-    
+    self.enteredWeight.hidden = YES;
+    self.enteredHeightInInches.hidden = YES;
+    self.enteredHeightInFeet.hidden = YES;
     
 }
 
