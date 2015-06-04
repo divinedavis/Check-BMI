@@ -36,6 +36,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *BMILabel;
 
 //The hidden workout button that appears when you touch the calculate button
+
 @property (weak, nonatomic) IBOutlet UIButton *workoutsButton;
 @property (weak, nonatomic) IBOutlet UISwitch *metricConversionSwitch;
 @property(nonatomic, getter=isOn) BOOL on;
@@ -45,6 +46,7 @@
 
 //The 'Calculate' button action
 - (IBAction)calculateButton:(UIButton *)sender;
+-(void)calculate;
 
 
 

@@ -33,11 +33,9 @@
 - (void)didReceiveMemoryWarning {
 }
 
-- (IBAction)calculateButton:(UIButton *)sender {
-    
+- (void)calculate {
     //When you touch the button the workouts button reveals itself
     self.workoutsButton.hidden = NO;
-
     
     //Takes in the weight value
     float weight = [self.enteredWeight.text intValue];
@@ -47,7 +45,7 @@
     
     //Takes in the height value in inches
     float heightInInches = [self.enteredHeightInInches.text intValue];
-  
+    
     //New variable
     float height;
     
@@ -76,7 +74,7 @@
         self.indexHeader.text = @"Very High BMI";
         
         
-        }
+    }
     //If your BMI is between these numbers, you'll be prompted with this text
     else if (BMI >= 25 && BMI <= 29.9) {
         self.scrollingInfo.text = @"Your BMI is too high. Try exercising more. This number does not calculate your muscle mass to fat ratio.";
@@ -127,15 +125,8 @@
         self.scrollingInfo.text = @"You should use a number that is less than 13 to get the best results";
         self.indexHeader.text = @"Error";
         self.indexHeader.textColor = [UIColor redColor];
-     
+        
     }
-    
-    
-    
-    
-    
-    
-
     
 }
 
@@ -146,7 +137,15 @@
     self.enteredHeightInFeet.hidden = YES;
     
     
+
+    
 }
+
+- (IBAction)calculateButton:(UIButton *)sender {
+    [self calculate];
+    
+    }
+
 
 
 @end
