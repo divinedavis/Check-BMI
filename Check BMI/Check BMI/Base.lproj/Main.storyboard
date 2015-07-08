@@ -80,22 +80,12 @@
                                     <constraint firstAttribute="height" constant="71" id="egg-Ig-s0y"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdC-9y-eCU">
-                                <rect key="frame" x="97" y="617" width="181" height="30"/>
-                                <state key="normal" title="Workouts">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="weight (lbs)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8XT-qA-4Hn">
                                 <rect key="frame" x="97" y="142" width="181" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A1h-hn-do3">
-                                <rect key="frame" x="163" y="578" width="51" height="31"/>
-                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -141,11 +131,9 @@
                         <outlet property="enteredHeightInInches" destination="oby-3N-ZIc" id="2pA-fE-Ngm"/>
                         <outlet property="enteredWeight" destination="8XT-qA-4Hn" id="70h-Tz-Mv7"/>
                         <outlet property="indexHeader" destination="qUS-BF-wSw" id="3u1-Ei-M7k"/>
-                        <outlet property="metricConversionSwitch" destination="A1h-hn-do3" id="vQ4-gk-QSO"/>
                         <outlet property="resultsLabel" destination="SAs-FU-D8G" id="p1I-gN-Ygc"/>
                         <outlet property="scrollingInfo" destination="iYG-5H-bIJ" id="brq-5B-PSg"/>
                         <outlet property="weightInKilograms" destination="8XT-qA-4Hn" id="f8m-SA-wAS"/>
-                        <outlet property="workoutsButton" destination="OdC-9y-eCU" id="tXR-T8-hQT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

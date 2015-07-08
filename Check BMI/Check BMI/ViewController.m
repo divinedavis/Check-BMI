@@ -134,16 +134,16 @@
     
 }
 
-- (void)setOn:(BOOL)metricConversionSwitch
-     animated:(BOOL)animated {
-    self.enteredWeight.hidden = YES;
-    self.enteredHeightInInches.hidden = YES;
-    self.enteredHeightInFeet.hidden = YES;
-    
-    
-
-    
-}
+////- (void)setOn:(BOOL)metricConversionSwitch
+//     animated:(BOOL)animated {
+//    self.enteredWeight.hidden = YES;
+//    self.enteredHeightInInches.hidden = YES;
+//    self.enteredHeightInFeet.hidden = YES;
+//    
+//    
+//
+//    
+//}
 
 - (IBAction)calculateButton:(UIButton *)sender {
     [self calculate];
