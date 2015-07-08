@@ -70,7 +70,11 @@
     
     //If your BMI is too high, you'll be given this text information
     if (BMI > 30) {
+        
+        //The scrolling text that will appear under the button that is scrollable will be this
         self.scrollingInfo.text = @"You're obese. Please consult a doctor. There are a number of reasons for this. Eating in smaller portions will help, along with exercising.";
+        
+        //The text above the scrolling text that will that is in bold (2)
         self.indexHeader.text = @"Very High BMI";
         
         
