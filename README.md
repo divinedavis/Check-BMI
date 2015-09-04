@@ -7,7 +7,7 @@ iOS app - A very easy way to input your weight and height to see what your BMI (
 ## Splash screen:
 ![alt tag](https://github.com/divinedavis/Check-BMI/blob/master/Splash%20screens/750x1334.png)
 
-## Main screen (will be changed to soon):
+## Main screen:
 
 ![alt tag](https://github.com/divinedavis/Check-BMI/blob/master/Screen%20shots/Screen%20Shot%202015-07-08%20at%204.30.34%20PM.png)
 
